@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>Prices</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #989898;
+            color: white;
+        }
+        header {
+            text-align: center;
+        }
+        .logo {
+            max-width: 339px;
+            max-height: 208px;
+            margin: auto;
+            margin-bottom: 40px;
+            display: block;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+        }
+        .menu a {
+            margin: 0 10px;
+            color: white;
+            transition: color 0.3s; 
+            margin-top: -50px; 
+        }
+        .menu a:hover {
+          color: #006625; 
+        }
+
+        .menu a[href="prices.html"]:visited,
+        .menu a[href="prices.html"]:active {
+            color: #006625;
+        }
+        
+        .textbox-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .textbox {
+            background-color: #666666;
+            border-radius: 42px;
+            width: 420px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .textbox p {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .textbox:last-child {
+            margin-right: 0;
+        }
+
+        .textbox-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .textbox-container:(1) {
+            height: 320px;
+        }
+        .textbox-container:(2) {
+            height: 860px;
+        }
+        .textbox-container:(3) {
+            height: 570px;
+        }
+        #go-up-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 50%;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        }
+
+        #go-up-button::before {
+        content: "\2191"; /* Unicode arrow symbol */
+        }
+
+        #go-up-button:hover {
+            background-color: #006625;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <button id="go-up-button"></button>
+    <script>
+        var button = document.getElementById("go-up-button");
+        // When the user clicks on the button
+        button.addEventListener("click", function() {
+            // Scroll to the top of the page
+            window.scrollTo({top: 0, behavior: "smooth"});
+        });
+    </script>
+    <header>
+        <a href="main.html">
+            <img src="D:\Universiry Kaunas\Internet Technology\website photos\photos\logo_transparent.png" alt="OlRa Photostudio" class="logo">
+        </a>
+      <a href="prices.html" class="logo"></a>
+    </header>
+    <nav>
+      <div class="menu">
+        <a href="biography.html">Biography</a>
+        <a href="prices.html">Prices</a>
+        <a href="concept-art.html">Concept Art</a>
+        <a href="dark-portraits.html">Dark Portraits</a>
+        <a href="beauty-art.html">Beauty Art</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="textbox-container">
+      <div class="textbox">
+        <div class="textbox-header">Studio's Rental Price</div>
+        <p>1 hour - 250€</p>
+        <p>Every additional hour - 100€</p>
+        <p>From 2 participants - +150€</p>
+        <p>Maximum number of participants - 4</p>
+      </div>
+
+      <div class="textbox">
+        <div class="textbox-header">Equipment</div>
+        <p>The studio price includes any three lamps with modifiers. The price of an additional lamp is 30€ for the whole rental period.</p>
+        <p> </p>
+        <p> </p>
+        <p> </p>
+        <p> </p>
+      </div>
+
+      <div class="textbox">
+        <div class="textbox-header">Backgrounds</div>
+        <p>You can choose any color of the background that you want from the pallet we have in our studio.</p>
+        <p> </p>
+        <p> </p>
+        <p> </p>
+        <p> </p>
+      </div>
+    </div>
+
+    <div class="textbox-container">
+        <div class="textbox">
+            <div class="textbox-header">Reservation, Cancellation, Payment</div>
+            <p><strong>Reservation:</strong></p>
+            <p>Reservation of the studio is done via email after the client contacted us through our contact page.</p>
+            <p><strong>Cancellation:</strong></p>
+            <p>I require a refundable retainer fee of 800€ (is not refunded in case of no show or cancellation within 3 days before shooting) and signed an agreement to hold a date.</p>
+            <p>The studio has the right to refuse to serve customers who have debts for studio services.</p>
+            <p><strong>Payment:</strong></p>
+            <p>We accept payment in cash, by card, or to a bank account (issued invoice).</p>
+            <p>In case of any damaging of property, the cost of it will be added to the total shooting price.</p>
+        </div>
+
+        <div class="textbox">
+            <div class="textbox-header">Responsibility</div>
+            <p>Booking of the photoshoot confirms the acceptance of the rules of the studio.</p>
+            <p>Material responsibility for damage to equipment, furniture, premises or accessories during the rental is on the person who booked the shooting</p>
+            <p>The studio is not responsible for:</p>
+            <ul>
+                <li>Any lost, stolen, or damaged personal belongings.</li>
+                <li>Any injuries sustained on the premises.</li>
+                <li>Any unauthorized access or use of personal information stored on the studio's servers.</li>
+            </ul>
+                <p>We strongly encourage all clients to secure their personal belongings and take appropriate precautions to ensure their own safety while on the premises.</p>
+                <p> </p>
+                <p> </p>
+                <p> </p>
+        </div>
+
+        <div class="textbox">
+            <div class="textbox-header">Your Time</div>
+            <p>We ask to come to the studio 10 minutes before the beginning of your time.</p>
+            <p>The rental and time is the time the studio is cleaned up and ready to be vacated. Shooting must end 10 minutes before the end of rental time.</p>
+            <p>You cannot ask for the extension of the rental time, since our photographers have very tight schedule. However, you can always order another shooting.</p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+        </div>
+    </div>
+
+    <div class="textbox-container">
+        <div class="textbox">
+            <div class="textbox-header">Participants</div>
+            <p>The person who reserved the studio undertakes to inform all participants of the photosession about the rules.</p>
+            <p>The studio is designed for simultaneous work of a maximum of 5 people (including the photographer).</p>
+            <p> </p>
+            <p> </p>
+        </div>
+
+        <div class="textbox">
+            <div class="textbox-header">In the Studio</div>
+            <p>Outdoor shoes are not allowed in the studio. Please bring a change pair or wear slippers, which are provided at the entrance.</p>
+            <p>No pets are allowed in the studio. This can be dangerous for them and the equipment.</p>
+            <p>This can be dangerous for them and the equipment.</p>
+        </div>
+
+        <div class="textbox">
+            <div class="textbox-header">In the Studio not Allowed</div>
+            <p>Without the permission of the photographer, it is prohibited to:</p>
+                <li>use flour, paints, confetti, oils, combustible materials, and other items that can pollute or damage the studio;</li>
+                <li>drink alcohol or be in a drunk condition, smoke;</li>
+            <p>In case of violation, the studio may decline the further service and the retainer fee is not refunded.</p>
+        </div>        
+    </div>
+</div>
+</body>
+</html>
+
