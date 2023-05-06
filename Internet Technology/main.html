@@ -2,7 +2,7 @@
 <html>
   <head>    
     <header>
-        <img src="D:\Universiry Kaunas\Internet-Technology-website\Internet Technology\website photos\photos\logo_transparent.png" alt="OlRa Photostudio" class="logo">
+        <img src="website photos/logo_transparent.png" alt="OlRa Photostudio" class="logo">
     <title>Main</title>
     <style>
         html, body {
@@ -68,35 +68,73 @@
         }
         
 </style>
-
-<header>
-    <div class="container">
-      <div class="logo-container">         
+</head>
+<body>
+  <header>
+      <div class="container">
+        <div class="logo-container">         
+        </div>
       </div>
+    </header>
+  <nav>
+    <div class="menu">
+      <a href="biography.html">Biography</a>
+      <a href="prices.html">Prices</a>
+      <a href="concept-art.html">Concept Art</a>
+      <a href="dark-portraits.html">Dark Portraits</a>
+      <a href="beauty-art.html">Beauty Art</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+    
     </div>
   </header>
-<nav>
-  <div class="menu">
-    <a href="biography.html">Biography</a>
-    <a href="prices.html">Prices</a>
-    <a href="concept-art.html">Concept Art</a>
-    <a href="dark-portraits.html">Dark Portraits</a>
-    <a href="beauty-art.html">Beauty Art</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
-  
-  </div>
-</header>
 
-<section class="main">
-  <div class="container">
-    <div class="photos-container">
-      <div class="photos">
-        <a href="concept-art.html"><img src="D:\Universiry Kaunas\Internet-Technology-website\Internet Technology\website photos\photos\photo1.jpg" alt="Photo 1"></a>
-        <a href="dark-portraits.html"><img src="D:\Universiry Kaunas\Internet-Technology-website\Internet Technology\website photos\photos\photo2.jpg" alt="Photo 2"></a>
-        <a href="beauty-art.html"><img src="D:\Universiry Kaunas\Internet-Technology-website\Internet Technology\website photos\photos\photo3.jpg" alt="Photo 3"></a>
+  <section class="main">
+    <div class="container">
+      <div class="photos-container">
+        <div class="photos">
+          <a href="concept-art.html"><img src="website photos/photo1.jpg" alt="Photo 1"></a>
+          <a href="dark-portraits.html"><img src="website photos/photo2.jpg" alt="Photo 2"></a>
+          <a href="beauty-art.html"><img src="website photos/photo3.jpg" alt="Photo 3"></a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+
+  </section>
+  <button id="myButton">Click me!</button>
+
+  <script>
+    const button = document.getElementById("myButton");
+    button.addEventListener("click", () => alert("Hello, world!"));
+  </script>
+
+
+  </html>
+  <audio controls>
+    <source src="D:\Universiry Kaunas\Internet-Technology-website\Internet Technology/Trey_Songz_Pain_Killers_Ringtone.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <button id="increaseFontButton">Increase font size</button>
+    <button id="decreaseFontButton">Decrease font size</button>
+    
+    <script>
+      const increaseFontButton = document.getElementById("increaseFontButton");
+      const decreaseFontButton = document.getElementById("decreaseFontButton");
+      const body = document.querySelector("body");
+      let fontSize = 16; // starting font size
+      
+      increaseFontButton.addEventListener("click", () => {
+        fontSize += 2; // increase font size by 2
+        body.style.fontSize = `${fontSize}px`; // set the font size in pixels
+      });
+      
+      decreaseFontButton.addEventListener("click", () => {
+        fontSize -= 2; // decrease font size by 2
+        body.style.fontSize = `${fontSize}px`; // set the font size in pixels
+      });
+    </script>
+
+
+  </body>
